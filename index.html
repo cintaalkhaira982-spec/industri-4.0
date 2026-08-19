@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Dive: Artificial Intelligence</title>
+    
+    <!-- Font Minimalis -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Hubungkan ke CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CAHAYA AMBIENT BACKGROUND -->
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+    <div class="ambient-glow-3"></div>
+
+    <!-- NAVIGASI -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">AI.Xplained</div>
+            <div class="nav-links">
+                <a href="#intro">Pengantar</a>
+                <a href="#evolusi">Evolusi</a>
+                <a href="#deep-learning">Deep Learning</a>
+                <a href="#generative">Generative AI</a>
+                <a href="#etika">Etika</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: HERO (PENGANTAR) -->
+    <section id="intro" class="hero">
+        <div class="container fade-up">
+            <span class="tag">Materi Utama</span>
+            <h1>Membongkar Otak <br><span class="gradient-text">Kecerdasan Buatan.</span></h1>
+            <p>Bukan sihir, bukan robot fiksi ilmiah. Mari kita bedah bagaimana barisan kode matematika dapat mensimulasikan cara berpikir, belajar, dan berkreasi layaknya otak manusia.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 2: DEFINISI UMUM -->
+    <section class="section-block">
+        <div class="container split-layout">
+            <div class="content-box glass-card fade-up">
+                <h2>Apa Sebenarnya AI Itu?</h2>
+                <p>Secara sederhana, <strong>Artificial Intelligence (AI)</strong> adalah disiplin ilmu komputer yang melatih mesin untuk melakukan tugas-tugas yang biasanya membutuhkan kecerdasan manusia.</p>
+                <p>Dulu, komputer hanya bisa menjalankan perintah baku (jika A, maka B). Sekarang, sistem AI dirancang untuk mengenali pola, memahami bahasa, memecahkan masalah, hingga mengambil keputusan secara mandiri tanpa harus diprogram secara spesifik untuk setiap skenario.</p>
+            </div>
+            <div class="image-box fade-up">
+                <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?q=80&w=1000" alt="Konsep AI">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: EVOLUSI (BENTO GRID) -->
+    <section id="evolusi" class="section-block">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Tiga Tahap Evolusi Otak Mesin</h2>
+                <p>Kecerdasan buatan tidak langsung menjadi pintar dalam semalam. Ada tiga tingkatan utama dalam pengembangannya.</p>
+            </div>
+            
+            <div class="bento-grid">
+                <!-- Tahap 1 -->
+                <div class="bento-card glass-card fade-up">
+                    <span class="tag-outline">Tahap 1: 1980-an</span>
+                    <h3>Rule-Based AI</h3>
+                    <p>Sistem pakar yang kaku. Mesin hanya mengikuti kumpulan aturan "If-Then" buatan manusia. <strong>Contoh:</strong> Bot komputer pada catur versi lama yang hanya menghitung kemungkinan langkah tanpa belajar.</p>
+                </div>
+                
+                <!-- Tahap 2 -->
+                <div class="bento-card glass-card fade-up">
+                    <span class="tag-outline">Tahap 2: 2000-an</span>
+                    <h3>Machine Learning (ML)</h3>
+                    <p>Mesin berhenti diberi aturan, dan mulai diberi <strong>Data</strong>. Algoritma mencari pola sendiri dari data. <strong>Contoh:</strong> Filter spam email yang belajar mengenali pola dari ribuan contoh email sampah.</p>
+                </div>
+
+                <!-- Tahap 3 -->
+                <div class="bento-card glass-card fade-up highlight-card">
+                    <span class="tag-outline" style="border-color: var(--accent-purple); color: var(--accent-purple);">Tahap 3: 2010-an - Sekarang</span>
+                    <h3>Deep Learning</h3>
+                    <p>Evolusi tertinggi ML. Menggunakan arsitektur yang meniru struktur sel saraf otak manusia secara berlapis-lapis. Mampu memproses data tak terstruktur seperti gambar, video, dan suara mentah.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: DEEP DIVE - NEURAL NETWORKS -->
+    <section id="deep-learning" class="section-block bg-dark">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2 style="color: white;">Bagaimana <span class="gradient-text">Neural Network</span> Bekerja?</h2>
+                <p style="color: #94A3B8;">Ini adalah inti dari Deep Learning. Jaringan saraf tiruan terdiri dari tiga lapisan utama yang saling berbobot (Weight & Bias).</p>
+            </div>
+            
+            <div class="layer-grid fade-up">
+                <div class="layer-card">
+                    <div class="icon-circle">1</div>
+                    <h4>Input Layer</h4>
+                    <p>Menerima data mentah. Jika mengenali wajah, lapisan ini menerima jutaan pixel gambar dan mengubahnya menjadi angka (matriks).</p>
+                </div>
+                <div class="layer-card">
+                    <div class="icon-circle">2</div>
+                    <h4>Hidden Layers</h4>
+                    <p>Lapisan misterius tempat "berpikir" terjadi. Lapisan pertama mendeteksi garis, lapisan kedua mendeteksi hidung/mata, lapisan ketiga menyusun wajah utuh.</p>
+                </div>
+                <div class="layer-card">
+                    <div class="icon-circle">3</div>
+                    <h4>Output Layer</h4>
+                    <p>Hasil akhir kalkulasi. Memberikan probabilitas jawaban (Misal: "Keyakinan 98% bahwa gambar ini adalah Kucing").</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: GENERATIVE AI & LLMs -->
+    <section id="generative" class="section-block">
+        <div class="container split-layout reverse-layout">
+            <div class="content-box glass-card fade-up">
+                <h2>Era Generative AI & LLM</h2>
+                <p>Bagaimana ChatGPT bisa menjawab soal sejarah atau menulis puisi? Rahasianya ada pada <strong>Large Language Models (LLM)</strong> yang digerakkan oleh arsitektur <em>Transformer</em>.</p>
+                <p>Sistem ini dilatih menggunakan hampir seluruh teks di internet. Secara teknis, AI tidak "mengerti" makna kata, melainkan ahli dalam probabilitas: <strong>memprediksi kata apa yang secara statistik paling masuk akal muncul setelah kata sebelumnya.</strong></p>
+                <div class="quote-box">
+                    "AI Generatif tidak memilah data untuk mencari jawaban yang ada, melainkan menciptakan konten baru yang belum pernah eksis sebelumnya berdasarkan pola yang dipelajari."
+                </div>
+            </div>
+            <div class="image-box fade-up">
+                <img src="https://images.unsplash.com/photo-1675271591211-126ad94e495d?q=80&w=1000" alt="Generative AI Abstract">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: TANTANGAN & ETIKA -->
+    <section id="etika" class="section-block">
+        <div class="container">
+            <div class="section-title fade-up">
+                <h2>Tantangan Terbesar AI Saat Ini</h2>
+                <p>Sistem yang sangat cerdas bukan berarti tanpa celah dan masalah.</p>
+            </div>
+
+            <div class="bento-grid" style="grid-template-columns: 1fr 1fr;">
+                <div class="bento-card glass-card fade-up">
+                    <h3 style="color: #EF4444;">1. Halusinasi AI</h3>
+                    <p>Fenomena di mana LLM memberikan jawaban yang salah dan mengarang fakta palsu, namun menyampaikannya dengan tata bahasa yang sangat meyakinkan seolah-olah itu kebenaran mutlak.</p>
+                </div>
+                <div class="bento-card glass-card fade-up">
+                    <h3 style="color: #F59E0B;">2. Bias Data</h3>
+                    <p>AI hanya secerdas data yang diberikan padanya. Jika data pelatihannya mengandung diskriminasi ras, gender, atau stereotip buruk, AI tersebut akan meniru dan memperkuat prasangka tersebut.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark">
+        <div class="container">
+            <p style="color: #94A3B8;">Materi Pembahasan Artificial Intelligence & Deep Learning</p>
+        </div>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="app.js"></script>
+
+</body>
+</html>
